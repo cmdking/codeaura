@@ -8,7 +8,7 @@
       "namePlaceholder": "Name",
       "emailPlaceholder": "Email",
       "messagePlaceholder": "Message...",
-      "sendMessage": "Send Message",
+      "sendMessage": "Submit",
       "errorAllFieldsRequired": "All fields are required",
       "errorInvalidEmail": "Please enter a valid email address",
       "successMessage": "Message sent successfully",

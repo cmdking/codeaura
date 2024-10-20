@@ -2,6 +2,7 @@
 import ContactForm from '../../../components/contactForm';
 import SVGNoiseBackground from "@/components/SVGNoiseBackground";
 import Navbar from "../../../components/navbar";
+import { ToastContainer } from 'react-toastify';
 
 export default function ContactPage() {
     return (
@@ -12,6 +13,7 @@ export default function ContactPage() {
         </div>
         <SVGNoiseBackground />
         <ContactForm />
+        <ToastContainer position="top-center" />
       </>
     );
   }

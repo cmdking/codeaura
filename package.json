@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -17,15 +18,20 @@
     "dotenv": "^16.4.5",
     "i18next": "^23.16.0",
     "i18next-browser-languagedetector": "^8.0.0",
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.453.0",
     "next": "14.2.15",
     "next-intl": "^3.21.1",
     "next-translate": "^2.6.2",
     "nodemailer": "^6.9.15",
     "react": "^18",
     "react-dom": "^18",
-    "react-i18next": "^15.0.3"
+    "react-i18next": "^15.0.3",
+    "react-toastify": "^10.0.6"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "^4.0.9",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.16",
     "@types/react": "^18",

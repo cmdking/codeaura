@@ -1,6 +1,8 @@
-"use client";
+"use client"
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Bounce, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
   const t = useTranslations('contact');
@@ -46,14 +48,43 @@ export default function ContactForm() {
     })
       .then((response) => {
         if (response.ok) {
-          alert(t('successMessage'));
+          toast.success(t('successMessage'), {
+            position: 'top-center',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme:"colored",
+            progress: undefined,
+          });
           setFormData({ name: '', email: '', message: '' });
         } else {
-          alert(t('errorFailedToSend'));
+          toast.error(t('errorFailedToSend'), {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
         }
       })
       .catch(() => {
-        alert(t('errorFailedToSend'));
+        toast.error(t('errorFailedToSend'), {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
       });
   };
 
@@ -76,6 +107,8 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               required
+              autoComplete="name"
+              maxLength={20}
             />
 
             <label htmlFor="email" style={{ display: 'none' }}>
@@ -89,6 +122,8 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
+              autoComplete="email"
+              maxLength={50}
             />
 
             <label htmlFor="message" style={{ display: 'none' }}>
@@ -101,6 +136,8 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               required
+              autoComplete="off"
+              maxLength={600}
             ></textarea>
 
             <button className="button" type="submit">

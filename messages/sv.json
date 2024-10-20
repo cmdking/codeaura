@@ -8,7 +8,7 @@
       "namePlaceholder": "Namn",
       "emailPlaceholder": "E-post",
       "messagePlaceholder": "Meddelande...",
-      "sendMessage": "Skicka meddelande",
+      "sendMessage": "Skicka",
       "errorAllFieldsRequired": "Alla fält måste fyllas i",
       "errorInvalidEmail": "Ange en giltig e-postadress",
       "successMessage": "Meddelandet skickades",

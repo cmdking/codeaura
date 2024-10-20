@@ -20,7 +20,10 @@ export function useInteractiveMouseEffect() {
       curY.current += (tgY.current - curY.current) * 0.1;
 
       if (mouseRef.current) {
-        mouseRef.current.style.transform = `translate3d(${curX.current}px, ${curY.current}px, 0)`;
+        const width = mouseRef.current.offsetWidth / 2;
+        const height = mouseRef.current.offsetHeight / 2;
+
+        mouseRef.current.style.transform = `translate3d(${curX.current - width}px, ${curY.current - height}px, 0)`;
       }
 
       requestAnimationFrame(animate);
