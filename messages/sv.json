@@ -1,0 +1,18 @@
+{
+    "HomePage": {
+      "viBygger": "Vi Gör Hemsidor!",
+      "contact-btn": "Kontakta oss"
+    },
+    "contact": {
+      "getInTouch": "Kontakta oss",
+      "namePlaceholder": "Namn",
+      "emailPlaceholder": "E-post",
+      "messagePlaceholder": "Meddelande...",
+      "sendMessage": "Skicka meddelande",
+      "errorAllFieldsRequired": "Alla fält måste fyllas i",
+      "errorInvalidEmail": "Ange en giltig e-postadress",
+      "successMessage": "Meddelandet skickades",
+      "errorFailedToSend": "Det gick inte att skicka meddelandet"
+    }
+  }
+  

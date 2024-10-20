@@ -1,0 +1,18 @@
+{
+    "HomePage": {
+      "viBygger": "We Build Websites!",
+      "contact-btn": "Contact us"
+    },
+    "contact": {
+      "getInTouch": "Get in Touch",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message...",
+      "sendMessage": "Send Message",
+      "errorAllFieldsRequired": "All fields are required",
+      "errorInvalidEmail": "Please enter a valid email address",
+      "successMessage": "Message sent successfully",
+      "errorFailedToSend": "Failed to send message"
+    }
+  }
+  
